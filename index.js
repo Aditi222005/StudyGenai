@@ -23,7 +23,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/files', fileRoutes);
 app.use('/api/ai', aiRoutes);
-
+// This route handler will respond to GET requests at the root URL
+app.get('/', (req, res) => {
+  res.send('deployment successful');
+});
 // --- Server Setup ---
 const PORT = process.env.PORT || 5000;
 
