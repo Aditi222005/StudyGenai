@@ -6,6 +6,7 @@ import connectDB from './config/db.js';
 import authRoutes from './routes/auth.routes.js';
 import fileRoutes from './routes/file.routes.js';
 import aiRoutes from './routes/ai.routes.js'
+
 // Load environment variables
 dotenv.config();
 
